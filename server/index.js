@@ -19,7 +19,7 @@ const {
 const { getCoords } = geolocationCtrl;
 
 const DIST_DIR = "/../client/dist";
-const PORT = 8080;
+const PORT = 8081;
 const app = express();
 
 // ***** dev only:
@@ -38,7 +38,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(`${__dirname}/${DIST_DIR}`)));
-app.listen(PORT, "localhost", async () => {
+app.listen(PORT, "0.0.0.0", async () => {
   await open(`http://localhost:${PORT}`);
   console.log(`${appName} v${ver} has started on port ${PORT}`);
 });
