@@ -84,9 +84,14 @@ const createChartOptions = ({
   };
 };
 
+// const chartColors = {
+//   blue: "rgba(63, 127, 191, 0.5)",
+//   gray: "rgba(127, 127, 127, 0.5)",
+// };
+
 const chartColors = {
-  blue: "rgba(63, 127, 191, 0.5)",
-  gray: "rgba(255, 127, 127, 0.5)",
+  blue: "rgba(0, 0, 255, 1)",
+  gray: "rgba(255, 0, 0, 1)",
 };
 
 const mapChartData = ({
